@@ -99,7 +99,7 @@ namespace pryCordobaSP4
         public void CargarGastos(Chart chart, ProgressBar pb)
         {
             string consulta = "SELECT Camión, (Litros * Precio) AS Total FROM Camiones";
-            CargarChart(chart, consulta, "Gasto en Combustible ($)", 500000, 500000, pb);
+            CargarChart(chart, consulta, "Gasto en Combustible ($)", 500000, 50000, pb);
         }
 
         public void CargarKilogramos(Chart chart, ProgressBar pb)
@@ -111,7 +111,7 @@ namespace pryCordobaSP4
         public void CargarViaticos(Chart chart, ProgressBar pb)
         {
             string consulta = "SELECT Camión, ((Litros * Precio) + Viáticos) AS Total FROM  Camiones";
-            CargarChart(chart, consulta, "Gastos Totales ($)", 500000, 500000, pb);
+            CargarChart(chart, consulta, "Gastos Totales ($)", 500000, 50000, pb);
         }
     }
 
