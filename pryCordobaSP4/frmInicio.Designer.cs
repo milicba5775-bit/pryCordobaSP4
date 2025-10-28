@@ -39,6 +39,8 @@
             this.btnKilometros = new System.Windows.Forms.Button();
             this.chtCamiones = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lblTipoGrafico = new System.Windows.Forms.Label();
+            this.cmbTipoGrafico = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chtCamiones)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +52,7 @@
             this.panel1.Controls.Add(this.btnKilogramos);
             this.panel1.Controls.Add(this.btnGastos);
             this.panel1.Controls.Add(this.btnKilometros);
-            this.panel1.Location = new System.Drawing.Point(35, 96);
+            this.panel1.Location = new System.Drawing.Point(28, 175);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 433);
             this.panel1.TabIndex = 0;
@@ -109,7 +111,7 @@
             this.chtCamiones.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chtCamiones.Legends.Add(legend1);
-            this.chtCamiones.Location = new System.Drawing.Point(373, 80);
+            this.chtCamiones.Location = new System.Drawing.Point(398, 140);
             this.chtCamiones.Name = "chtCamiones";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -126,12 +128,31 @@
             this.progressBar1.Size = new System.Drawing.Size(908, 38);
             this.progressBar1.TabIndex = 2;
             // 
+            // lblTipoGrafico
+            // 
+            this.lblTipoGrafico.AutoSize = true;
+            this.lblTipoGrafico.Location = new System.Drawing.Point(12, 78);
+            this.lblTipoGrafico.Name = "lblTipoGrafico";
+            this.lblTipoGrafico.Size = new System.Drawing.Size(156, 28);
+            this.lblTipoGrafico.TabIndex = 3;
+            this.lblTipoGrafico.Text = "Tipo de Gráfico:";
+            // 
+            // cmbTipoGrafico
+            // 
+            this.cmbTipoGrafico.FormattingEnabled = true;
+            this.cmbTipoGrafico.Location = new System.Drawing.Point(174, 78);
+            this.cmbTipoGrafico.Name = "cmbTipoGrafico";
+            this.cmbTipoGrafico.Size = new System.Drawing.Size(282, 36);
+            this.cmbTipoGrafico.TabIndex = 4;
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1114, 638);
+            this.Controls.Add(this.cmbTipoGrafico);
+            this.Controls.Add(this.lblTipoGrafico);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.chtCamiones);
             this.Controls.Add(this.panel1);
@@ -144,6 +165,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chtCamiones)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -156,5 +178,7 @@
         private System.Windows.Forms.Button btnGastos;
         private System.Windows.Forms.DataVisualization.Charting.Chart chtCamiones;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lblTipoGrafico;
+        private System.Windows.Forms.ComboBox cmbTipoGrafico;
     }
 }
