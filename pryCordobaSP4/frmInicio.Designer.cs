@@ -133,21 +133,22 @@
             this.lblTipoGrafico.AutoSize = true;
             this.lblTipoGrafico.Location = new System.Drawing.Point(12, 78);
             this.lblTipoGrafico.Name = "lblTipoGrafico";
-            this.lblTipoGrafico.Size = new System.Drawing.Size(156, 28);
+            this.lblTipoGrafico.Size = new System.Drawing.Size(127, 21);
             this.lblTipoGrafico.TabIndex = 3;
             this.lblTipoGrafico.Text = "Tipo de Gráfico:";
             // 
             // cmbTipoGrafico
             // 
+            this.cmbTipoGrafico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoGrafico.FormattingEnabled = true;
             this.cmbTipoGrafico.Location = new System.Drawing.Point(174, 78);
             this.cmbTipoGrafico.Name = "cmbTipoGrafico";
-            this.cmbTipoGrafico.Size = new System.Drawing.Size(282, 36);
+            this.cmbTipoGrafico.Size = new System.Drawing.Size(282, 29);
             this.cmbTipoGrafico.TabIndex = 4;
             // 
             // frmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1114, 638);

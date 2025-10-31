@@ -17,7 +17,7 @@ namespace pryCordobaSP4
     internal class clsConexionBD
 
     {
-        private string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\USUARIO\source\repos\pryCordobaSP4\pryCordobaSP4\Base de Datos/ControlCamiones.accdb";
+        private string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Alumno\source\repos\pryCordobaSP4\pryCordobaSP4\Base de Datos/ControlCamiones.accdb";
 
         OleDbConnection conexion;
         OleDbCommand comando;
